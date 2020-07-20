@@ -21,5 +21,16 @@ namespace WebApplicationmonPremierApp.Controllers
         {
             return View("Toto");
         }
+
+        // autre action 
+
+        public ActionResult Rechercher()
+        {
+            //code
+            //
+
+            // En attandant de créer la vue correspondante, on peut retourner vers null
+            return null;
+        }
     }
 }
