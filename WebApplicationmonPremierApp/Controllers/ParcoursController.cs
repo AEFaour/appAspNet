@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplicationmonPremierApp.Models;
 
 namespace WebApplicationmonPremierApp.Controllers
 {
@@ -31,6 +32,19 @@ namespace WebApplicationmonPremierApp.Controllers
 
             // En attandant de créer la vue correspondante, on peut retourner vers null
             return null;
+        }
+
+        // Action Mon Parcours
+
+        public ActionResult MonParcours()
+        {
+            // Retourner un Parcours p à ce vue
+            Parcours p = new Parcours();
+            p.Id = 1;
+            p.Nom = "Dot net";
+            p.Slogan = "The best";
+            p.Logo = "mon logo";
+            return View(p);
         }
     }
 }
