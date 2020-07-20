@@ -1,0 +1,31 @@
+﻿<!-- Le model devient une liste de parcours-->
+@model List<WebApplicationmonPremierApp.Models.Parcours>
+
+@{
+    ViewBag.Title = "ListeParcours";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>  Liste des Parcours</h2>
+<table class="table table-hover text-center" border="1">
+    <tr class="alert-danger text-center">
+        <th class="text-center">Numéro</th>
+        <th class="text-center">Nom</th>
+        <th class="text-center">Slogan</th>
+        <th class="text-center">Logo</th>
+    </tr>
+    <!--boucles sur les éléments-->
+    @foreach (var parcours in Model)
+    {
+        <tr>
+            <td> @parcours.Id </td>
+            <td> @parcours.Nom </td>
+            <td> @parcours.Slogan </td>
+            <td> @parcours.Logo </td>
+        </tr>
+    }
+
+</table>
+
+
+

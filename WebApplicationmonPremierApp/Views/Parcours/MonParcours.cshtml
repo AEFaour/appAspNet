@@ -1,0 +1,21 @@
+﻿@model WebApplicationmonPremierApp.Models.Parcours
+@{
+    ViewBag.Title = "MonParcours";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Exemple de Parcours</h2>
+<p>
+    Mon Parcours :
+
+    Numéro              : @Model.Id
+    <br />
+    Nom de parcours     : @Model.Nom
+    <br />
+    Slogan de Parcours  : @Model.Slogan
+    <br />
+    Logo de Parcours    : @Model.Logo
+    <br />
+
+</p>
+

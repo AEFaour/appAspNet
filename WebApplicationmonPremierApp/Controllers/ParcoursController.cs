@@ -45,6 +45,28 @@ namespace WebApplicationmonPremierApp.Controllers
             p.Slogan = "The best";
             p.Logo = "mon logo";
             return View(p);
+            // Comment la Vue va utiliser cet objet p
+        }
+        //Action liste des parcours
+        public ActionResult ListeParcours()
+        {
+            // Créer une liste de parcours
+            List<Parcours> _list = new List<Parcours>();
+            Random r = new Random();
+            int j = 0;
+            for (int k = 0; k < 30; k++)
+            {
+                Parcours p = new Parcours();
+                j = r.Next(j, 101);
+                p.Id = j;
+                p.Nom = "Nom du Parcours" + j;
+                p.Slogan = "Slogan du Parcours " + j;
+                p.Logo = "Logo du Parcours " + j;
+                _list.Add(p);
+
+            }
+            return View(_list);
+            //Contruire la vue pourquelle affiche la liste
         }
     }
 }

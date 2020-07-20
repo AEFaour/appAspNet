@@ -166,6 +166,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Parcours\Liste.cshtml" />
     <Content Include="Views\Parcours\Toto.cshtml" />
+    <Content Include="Views\Parcours\MonParcours.cshtml" />
+    <Content Include="Views\Parcours\ListeParcours.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
