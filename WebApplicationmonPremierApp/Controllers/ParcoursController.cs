@@ -9,9 +9,12 @@ namespace WebApplicationmonPremierApp.Controllers
 {
     public class ParcoursController : Controller
     {
+        // Les actions du controler -- méthode
+        private static List<Parcours> parcours = new List<Parcours>();
+
         public ActionResult Liste()
         {
-            // Les actions du controler -- méthode
+
             return View();
             // ce qui suppos que nous avons une Vue qui s'appelle Liste
             // et qui se trouve dans le rep /Views/parcours
@@ -67,6 +70,30 @@ namespace WebApplicationmonPremierApp.Controllers
             }
             return View(_list);
             //Contruire la vue pourquelle affiche la liste
+        }
+        // Saisie des infos du Parcours
+        [HttpPost]
+        public ActionResult Saisie(Parcours p)
+        {
+            parcours.Add(p);
+            return View();
+        }
+        // D'abord le présenter à l'ulisateur pour la saisie
+        //get
+        public ActionResult Saisie()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SaisieBootstrap(Parcours p)
+        {
+            parcours.Add(p);
+            return View();
+        }
+        public ActionResult SaisieBootstrap()
+        {
+            return View();
         }
     }
 }

@@ -22,3 +22,18 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar-fixed-top {
+    background-color: red;
+    border-color: burlywood;
+    color: blueviolet;
+}
+
+.navbar-nav {
+    color: blueviolet;
+}
+
+.font-violet {
+    background-color: blueviolet;
+    color: blue;
+}

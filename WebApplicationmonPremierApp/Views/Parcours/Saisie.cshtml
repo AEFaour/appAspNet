@@ -1,0 +1,18 @@
+﻿<!-- Le model devient une liste de parcours-->
+@*@model List<WebApplicationmonPremierApp.Models.Parcours>*@
+
+@{
+    ViewBag.Title = "Saisie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>  Saisie info Parcours  </h2>
+<form action="/Parcours/Saisie" method="post" class="form-group">
+    Numéro : <input type="number" name="Id" class="form-control" /><br />
+    Nom : <input type="text" name="Nom" class="form-control" /><br />
+    Slogan : <input type="text" name="Slogan" class="form-control" /><br />
+    Logo : <input type="text" name="Logo" class="form-control" /><br />
+    <input type="submit" class="btn btn-danger" />
+
+</form>
+
