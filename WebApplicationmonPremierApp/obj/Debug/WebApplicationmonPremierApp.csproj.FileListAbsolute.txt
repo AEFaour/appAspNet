@@ -79,6 +79,7 @@ C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPr
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.WebPages.resources.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.csprojAssemblyReference.cache
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.csproj.CoreCompileInputs.cache
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.csproj.CopyComplete
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.dll

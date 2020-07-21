@@ -170,6 +170,7 @@
     <Content Include="Views\Parcours\ListeParcours.cshtml" />
     <Content Include="Views\Parcours\Saisie.cshtml" />
     <Content Include="Views\Parcours\SaisieBootstrap.cshtml" />
+    <Content Include="Views\Parcours\SaisieHelperRazor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

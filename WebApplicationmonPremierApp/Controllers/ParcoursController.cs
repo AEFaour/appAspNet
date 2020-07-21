@@ -88,12 +88,45 @@ namespace WebApplicationmonPremierApp.Controllers
         [HttpPost]
         public ActionResult SaisieBootstrap(Parcours p)
         {
-            parcours.Add(p);
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View(p);
+            }
+            else
+            {
+                parcours.Add(p);
+                return View();
+            }
+
         }
         public ActionResult SaisieBootstrap()
         {
             return View();
         }
+
+        // Modification get suivi de Poste
+
+        //Suppression Get puis Post
+        // Saisie = get (qui renvoie le formulaire) + un poste qui récupère le contenu du formulaire
+        public ActionResult SaisieHelperRazor()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult SaisieHelperRazor(Parcours p)
+        {
+            //Ajouter à la liste
+            if (!ModelState.IsValid)
+            {
+                return View(p);
+            }
+            else
+            {
+                parcours.Add(p);
+                return View();
+            }
+
+        }
     }
+
 }

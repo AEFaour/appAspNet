@@ -1,0 +1,43 @@
+﻿@model WebApplicationmonPremierApp.Models.Parcours
+@{
+    ViewBag.Title = "SaisieHelperRazor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Saisie Helper Razor -- utilisation du c# et bootstrap pour générer les composants visuels du DOM</h2>
+
+@using (Html.BeginForm(actionName: "SaisieHelperRazor", controllerName: "Parcours", method: FormMethod.Post))
+{
+    <div class="form-group">
+        <label class="col-md-2">Numéro</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Id, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2">Nom</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Nom, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2">Slogan</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Slogan, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2">Logo</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Logo, new { @class = "form-control" })
+        </div>
+    </div>
+    <!--summit-->
+    <div class="form-group">
+        <input type="submit" class="btn btn-danger col-md-offset-4" />
+    </div>
+
+}
