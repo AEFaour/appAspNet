@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,10 +129,28 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ModulesController.cs" />
     <Compile Include="Controllers\ParcoursController.cs" />
+    <Compile Include="Controllers\ParcoursEFController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007211206432_InitialCreate.cs" />
+    <Compile Include="Migrations\202007211206432_InitialCreate.Designer.cs">
+      <DependentUpon>202007211206432_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007211235376_OneToMany.cs" />
+    <Compile Include="Migrations\202007211235376_OneToMany.Designer.cs">
+      <DependentUpon>202007211235376_OneToMany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007211311226_OneToMany1.cs" />
+    <Compile Include="Migrations\202007211311226_OneToMany1.Designer.cs">
+      <DependentUpon>202007211311226_OneToMany1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\EFParcours.cs" />
+    <Compile Include="Models\Module.cs" />
+    <Compile Include="Models\ModuleView.cs" />
     <Compile Include="Models\Parcours.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -172,6 +198,16 @@
     <Content Include="Views\Parcours\SaisieBootstrap.cshtml" />
     <Content Include="Views\Parcours\SaisieHelperRazor.cshtml" />
     <Content Include="Views\Parcours\ModifParcours.cshtml" />
+    <Content Include="Views\ParcoursEF\Create.cshtml" />
+    <Content Include="Views\ParcoursEF\Delete.cshtml" />
+    <Content Include="Views\ParcoursEF\Details.cshtml" />
+    <Content Include="Views\ParcoursEF\Edit.cshtml" />
+    <Content Include="Views\ParcoursEF\Index.cshtml" />
+    <Content Include="Views\Modules\Create.cshtml" />
+    <Content Include="Views\Modules\Delete.cshtml" />
+    <Content Include="Views\Modules\Details.cshtml" />
+    <Content Include="Views\Modules\Edit.cshtml" />
+    <Content Include="Views\Modules\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -188,6 +224,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202007211206432_InitialCreate.resx">
+      <DependentUpon>202007211206432_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007211235376_OneToMany.resx">
+      <DependentUpon>202007211235376_OneToMany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007211311226_OneToMany1.resx">
+      <DependentUpon>202007211311226_OneToMany1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

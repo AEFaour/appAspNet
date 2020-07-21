@@ -1,3 +1,8 @@
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.Migrations.InitialCreate.resources
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.Migrations.OneToMany.resources
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.Migrations.OneToMany1.resources
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.csproj.GenerateResource.cache
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.csproj.CoreCompileInputs.cache
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\WebApplicationmonPremierApp.dll.config
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\WebApplicationmonPremierApp.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\WebApplicationmonPremierApp.pdb
@@ -51,6 +56,8 @@ C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPr
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\roslyn\VBCSCompiler.exe
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\Antlr3.Runtime.dll
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\EntityFramework.dll
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\EntityFramework.SqlServer.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\Newtonsoft.Json.dll
@@ -62,6 +69,8 @@ C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPr
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\System.Web.WebPages.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\System.Web.WebPages.Razor.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\WebGrease.dll
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\EntityFramework.xml
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\EntityFramework.SqlServer.xml
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\System.Web.Helpers.xml
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\System.Web.Mvc.xml
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\System.Web.Optimization.xml
@@ -72,6 +81,7 @@ C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPr
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\Newtonsoft.Json.xml
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\Antlr3.Runtime.pdb
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\EntityFramework.resources.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.Helpers.resources.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.Mvc.resources.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.Optimization.resources.dll
@@ -79,8 +89,6 @@ C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPr
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.WebPages.resources.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\bin\fr\System.Web.WebPages.Razor.resources.dll
-C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.csprojAssemblyReference.cache
-C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.csproj.CoreCompileInputs.cache
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.csproj.CopyComplete
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.dll
 C:\Users\Anas FAOUR\source\repos\WebApplicationmonPremierApp\WebApplicationmonPremierApp\obj\Debug\WebApplicationmonPremierApp.pdb

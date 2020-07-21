@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -16,5 +17,7 @@ namespace WebApplicationmonPremierApp.Models
 
         //Logo
         public string Logo { get; set; }
+
+        public virtual Collection<Module> Modules { get; set; }
     }
 }
