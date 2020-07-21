@@ -160,6 +160,25 @@ namespace WebApplicationmonPremierApp.Controllers
         }
 
         //Suppression Get puis Post
+
+
+        public JsonResult Supprimer(int id)
+        {
+
+            Parcours ASupp = parcours.SingleOrDefault(p => p.Id == id);
+            if (ASupp != null)
+            {
+                //supprimer
+                parcours.Remove(ASupp);
+
+                return Json(new { Suppression = "Ok" }, JsonRequestBehavior.AllowGet);
+            }
+            else
+
+                return Json(new { Erreur = "Non trouvé" }, JsonRequestBehavior.AllowGet);
+
+
+        }
     }
 
 }
