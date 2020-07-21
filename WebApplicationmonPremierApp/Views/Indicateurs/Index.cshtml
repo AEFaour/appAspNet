@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebApplicationmonPremierApp.Models.Indicateur>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Libelle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Valeur)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateEvaluation)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Libelle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Valeur)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateEvaluation)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdIndicateur }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdIndicateur }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdIndicateur })
+        </td>
+    </tr>
+}
+
+</table>

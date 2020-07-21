@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IndicateursController.cs" />
     <Compile Include="Controllers\ModulesController.cs" />
     <Compile Include="Controllers\ParcoursController.cs" />
     <Compile Include="Controllers\ParcoursEFController.cs" />
@@ -147,8 +148,18 @@
     <Compile Include="Migrations\202007211311226_OneToMany1.Designer.cs">
       <DependentUpon>202007211311226_OneToMany1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007211418311_Indicateurs.cs" />
+    <Compile Include="Migrations\202007211418311_Indicateurs.Designer.cs">
+      <DependentUpon>202007211418311_Indicateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007211450469_Indicateurs2.cs" />
+    <Compile Include="Migrations\202007211450469_Indicateurs2.Designer.cs">
+      <DependentUpon>202007211450469_Indicateurs2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EFParcours.cs" />
+    <Compile Include="Models\Indicateur.cs" />
+    <Compile Include="Models\IndicateurView.cs" />
     <Compile Include="Models\Module.cs" />
     <Compile Include="Models\ModuleView.cs" />
     <Compile Include="Models\Parcours.cs" />
@@ -208,6 +219,11 @@
     <Content Include="Views\Modules\Details.cshtml" />
     <Content Include="Views\Modules\Edit.cshtml" />
     <Content Include="Views\Modules\Index.cshtml" />
+    <Content Include="Views\Indicateurs\Create.cshtml" />
+    <Content Include="Views\Indicateurs\Delete.cshtml" />
+    <Content Include="Views\Indicateurs\Details.cshtml" />
+    <Content Include="Views\Indicateurs\Edit.cshtml" />
+    <Content Include="Views\Indicateurs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -234,6 +250,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007211311226_OneToMany1.resx">
       <DependentUpon>202007211311226_OneToMany1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007211418311_Indicateurs.resx">
+      <DependentUpon>202007211418311_Indicateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007211450469_Indicateurs2.resx">
+      <DependentUpon>202007211450469_Indicateurs2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

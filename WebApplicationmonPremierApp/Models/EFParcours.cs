@@ -22,6 +22,8 @@
 
         public virtual DbSet<Parcours> Parcours { get; set; }
         public virtual DbSet<Module> Modules { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplicationmonPremierApp.Models.Indicateur> Indicateurs { get; set; }
     }
 
     //public class MyEntity
