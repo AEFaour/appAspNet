@@ -1,12 +1,14 @@
 ﻿@model WebApplicationmonPremierApp.Models.Parcours
+
 @{
-    ViewBag.Title = "SaisieHelperRazor";
+    ViewBag.Title = "ModifParcours";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Saisie Helper Razor -- utilisation du c# et bootstrap pour générer les composants visuels du DOM</h2>
+<h2>ModifParcours</h2>
 
-@using (Html.BeginForm(actionName: "SaisieHelperRazor", controllerName: "Parcours", method: FormMethod.Post))
+
+@using (Html.BeginForm(actionName: "ModifParcours", controllerName: "Parcours", method: FormMethod.Post))
 {
     <div class="form-group">
         <label class="col-md-2">Numéro</label>

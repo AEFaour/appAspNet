@@ -15,7 +15,7 @@ namespace WebApplicationmonPremierApp.Controllers
         public ActionResult Liste()
         {
 
-            return View();
+            return View(parcours);
             // ce qui suppos que nous avons une Vue qui s'appelle Liste
             // et qui se trouve dans le rep /Views/parcours
         }
@@ -104,9 +104,6 @@ namespace WebApplicationmonPremierApp.Controllers
             return View();
         }
 
-        // Modification get suivi de Poste
-
-        //Suppression Get puis Post
         // Saisie = get (qui renvoie le formulaire) + un poste qui récupère le contenu du formulaire
         public ActionResult SaisieHelperRazor()
         {
@@ -127,6 +124,42 @@ namespace WebApplicationmonPremierApp.Controllers
             }
 
         }
+
+        // Modification get suivi de Poste
+
+        public ActionResult ModifParcours(int id)
+        {
+            Parcours parcoursAModifier = parcours.SingleOrDefault(p => p.Id == id);
+            if (parcoursAModifier == null)
+            {
+                return View("Erreur");
+            }
+            else
+            {
+                return View(parcoursAModifier);
+            }
+
+            //Suppression Get puis Post
+        }
+        [HttpPost]
+        public ActionResult ModifParcours(Parcours p)
+        {
+
+            // Modifier le parcours 
+            Parcours AModifier = parcours.SingleOrDefault(x => x.Id == p.Id);
+            if (AModifier != null)
+            {
+                //AModifier.Nom = p.Nom; AModifier.Slogan = p.Slogan; AModifier.Logo = p.Logo;
+                parcours.Remove(AModifier); parcours.Add(p); // puisque la liste est static: Modif = Supp +Ajout
+            }
+
+            return
+                View("Liste", parcours);
+
+
+        }
+
+        //Suppression Get puis Post
     }
 
 }
